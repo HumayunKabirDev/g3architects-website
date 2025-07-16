@@ -1,21 +1,121 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-
-.work-sans-primary-git 8nfont {
-  font-family: "Work Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
+/* common css style */
 *{
     margin: 0;
     padding: 0;
     outline: 0;
     box-sizing: border-box;
 }
-ul,li,a{
+ul, li{
+    list-style: none;
+}
+ul, li, a{
     text-decoration: none;
 }
-ul.li{
-    list-style-type: none;
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
 }
+.workFont {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+/* common css style */
+/* ======================================== */
+/* common style for html */
+.flex{
+    display: flex;
+}
+.colorT{
+    color: #131313;
+}
+.ColorC{
+    color: #424242;
+}
+.ColorP{
+    color: #727272;
+}
+.bg-color{
+    background: rgba(255, 144, 14, 0.1);
+}
+/* common style for html */
+/* ======================================== */
+/* navbar related styles */
+.navbar ,.banner{
+    max-width: 1320px;
+    margin: 0 auto;
+}
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+.navbar h3{
+    font-size: 3rem;
+}
+.nav-menu{
+   margin-right: 30px;
+   gap: 30px;
+}
+.navbar span{
+    color: #FF900E;
+}
+ ul li a{
+   color: #424242;
+}
+/* navbar Related Style */
+/* ==================================== */
+/* Banner Style Start */
+
+.banner-content{
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.banner h1{
+    font-size: 4rem;
+    font-weight: 700;
+}
+.banner p{
+  font-size: 1rem;
+  padding: 20px 0;
+}
+.primary-btn{
+    font-size: 1.25rem;
+    color: white;
+    padding: 15px 25px;
+    background-color: #FF900E;
+    border: none;
+    border-radius: 5px;
+}
+.banner-img{
+    width: 100%;
+    color: #727272;
+}
+/* Banner Style Start */
+/* ======================================== */
+/* Responsive style Start */
+@media screen and (max-width: 576px) {
+    .navbar, .nav-menu{
+        flex-direction: column;
+    }
+    .navbar h3{
+        font-size: 2.5rem;
+    }
+    .banner-content{
+        margin-top: 10px;
+    }
+    .banner-content h1{
+        font-size: 3rem;
+    }
+    .nav-menu{
+        margin: 20px auto;
+    }
+   .nav-menu{
+    gap: 5px;
+   }
+}
+/* Responsive style Start */
