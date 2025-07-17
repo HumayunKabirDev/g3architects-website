@@ -1,20 +1,22 @@
-
 /* common css style */
-*{
-    margin: 0;
-    padding: 0;
-    outline: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
 }
-ul, li{
-    list-style: none;
+ul,
+li {
+  list-style: none;
 }
-ul, li, a{
-    text-decoration: none;
+ul,
+li,
+a {
+  text-decoration: none;
 }
-.container{
-    max-width: 1280px;
-    margin: 0 auto;
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
 }
 .workFont {
   font-family: "Work Sans", sans-serif;
@@ -24,98 +26,263 @@ ul, li, a{
 /* common css style */
 /* ======================================== */
 /* common style for html */
-.flex{
-    display: flex;
+.flex {
+  display: flex;
 }
-.colorT{
-    color: #131313;
+.colorT {
+  color: #131313;
 }
-.ColorC{
-    color: #424242;
+.ColorC {
+  color: #424242;
 }
-.ColorP{
-    color: #727272;
+.ColorP {
+  color: #727272;
+  font-size: 1rem;
 }
-.bg-color{
-    background: rgba(255, 144, 14, 0.1);
+.bg-color {
+  background: rgba(255, 144, 14, 0.1);
+  padding: 30px 0;
 }
 /* common style for html */
 /* ======================================== */
 /* navbar related styles */
-.navbar ,.banner{
-    max-width: 1320px;
-    margin: 0 auto;
+.navbar,
+.banner,
+.features {
+  max-width: 1320px;
+  margin: 0 auto;
 }
-.navbar{
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 20px;
+.navbar {
+  justify-content: space-between;
+  align-items: center;
 }
-.navbar h3{
-    font-size: 3rem;
+.navbar h3,
+.features h3 {
+  font-size: 3rem;
 }
-.nav-menu{
-   margin-right: 30px;
-   gap: 30px;
+.nav-menu {
+  margin-right: 30px;
+  gap: 30px;
 }
-.navbar span{
-    color: #FF900E;
+.navbar span {
+  color: #ff900e;
 }
- ul li a{
-   color: #424242;
+ul li a {
+  color: #424242;
+  font-size: 1rem;
+  font-weight: 500;
+}
+ul li a:hover {
+  color: #ff900e;
+  transition: 0.4s;
 }
 /* navbar Related Style */
 /* ==================================== */
 /* Banner Style Start */
 
-.banner-content{
-    max-width: 850px;
-    margin: 0 auto;
-    text-align: center;
-    margin-top: 100px;
-    margin-bottom: 50px;
+.banner-content {
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
 }
-.banner h1{
-    font-size: 4rem;
-    font-weight: 700;
+.banner h1 {
+  font-size: 4rem;
+  font-weight: 700;
 }
-.banner p{
+.banner p {
   font-size: 1rem;
   padding: 20px 0;
+  line-height: 2;
 }
-.primary-btn{
-    font-size: 1.25rem;
-    color: white;
-    padding: 15px 25px;
-    background-color: #FF900E;
-    border: none;
-    border-radius: 5px;
+.primary-btn {
+  font-size: 1.25rem;
+  color: white;
+  padding: 15px 25px;
+  background-color: #ff900e;
+  border: none;
+  border-radius: 5px;
 }
-.banner-img{
-    width: 100%;
-    color: #727272;
+.primary-btn:hover {
+  background-color: cadetblue;
+  transition: 0.4s;
+}
+.banner-img {
+  width: 100%;
+  color: #727272;
 }
 /* Banner Style Start */
 /* ======================================== */
+/* Team-work Start */
+.teams {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+.team-works {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.teamsImages {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.teamsContent {
+  max-width: 530px;
+}
+.teamsContent h3 {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #727272;
+}
+.black_color {
+  color: #131313;
+  font-weight: 800;
+}
+.orange_color {
+  color: #ff900e;
+  font-weight: 800;
+}
+.teamsContent p {
+  line-height: 1.5;
+  padding: 20px 0;
+}
+/* Team-work End */
+/* ======================================== */
+/* Features Section Start */
+.features {
+  margin-bottom: 100px;
+}
+.feature_items {
+  display: flex;
+  margin: 0 auto;
+  gap: 80px;
+}
+.left_content {
+  border-left: 5px solid #ff900e;
+  padding-left: 20px;
+}
+.features h3 {
+  max-width: 460px;
+}
+.features p {
+  max-width: 580px;
+  padding: 15px 0;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+.feature_card {
+  padding: 30px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.06);
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+.feature_card h4{
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #131313;
+}
+.features_image img {
+  width: 100%;
+  height: 95%;
+}
+.feature_btn {
+  background-color: #ff900e;
+  padding: 40px 38px;
+  color: white;
+  max-width: 340px;
+  border: none;
+  border-radius: 10px;
+  margin: -120px 0 0 -70px;
+}
+.feature_btn h5 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+.feature_btn span {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+/* Features Section End */
+/* ======================================== */
+
+/* ======================================== */
 /* Responsive style Start */
+/* Responsive For Small Device */
 @media screen and (max-width: 576px) {
-    .navbar, .nav-menu{
+  .navbar,
+  .nav-menu,
+  .team-works,
+  .feature_items {
+    flex-direction: column;
+  }
+  .navbar h3 {
+    font-size: 2.5rem;
+  }
+  .banner-content {
+    margin-top: 10px;
+  }
+  .banner-content h1 {
+    font-size: 3rem;
+  }
+  .nav-menu {
+    margin: 20px auto;
+  }
+  .nav-menu {
+    gap: 5px;
+  }
+  .teamsImages {
+    grid-template-columns: 1fr;
+  }
+  .team-works {
+    padding: 0 5px;
+    text-align: center;
+  }
+  .teamsContent {
+    margin-top: 30px;
+  }
+  .features {
+    text-align: center;
+    justify-content: center;
+    margin: 0 10px;
+  }
+  .feature_btn {
+    padding: 20px 18px;
+    margin-left: -155px;
+  }
+  .feature_btn h5 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .feature_btn span {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+}
+/* Responsive For Small Device */
+/* =============================================== */
+/* Responsive For Medium Device */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .navbar h3{
+        margin-left: 20px;
+    }
+    .team-works{
         flex-direction: column;
     }
-    .navbar h3{
-        font-size: 2.5rem;
+    .teamsContent{
+        margin-top: 30px;
     }
-    .banner-content{
-        margin-top: 10px;
-    }
-    .banner-content h1{
-        font-size: 3rem;
-    }
-    .nav-menu{
-        margin: 20px auto;
-    }
-   .nav-menu{
-    gap: 5px;
-   }
+     .features {
+    text-align: center;
+    justify-content: center;
+    margin: 0 10px;
+  }
+  .feature_items {
+    gap: 20px;
+  }
+
 }
 /* Responsive style Start */
